@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+	<head>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title> Download Image</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+		<%- include ../partials/analytics.ejs %>
+	</head>
+	
+	<body>
+		<% include ../partials/nav.ejs %>
+		
+		<div id="wrapper">
+			
+			<main>
+				<div class="container" id="content">
+                    <div class="row">
+                        <div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-3">
+					<img src="<%= fileName %>"  >
+                        </div>
+					<br><br>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-6 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                    <div class="row">
+					<p>Description: <%= description %></p><br>
+                    </div>
+                    <div class="row">
+					<p>Category: <%= category %></p><br>
+                    </div>
+                    <div class="row">
+					<p>Image Name: <%= name %> </p><br>
+                    </div>
+                    </div>
+                        </div>
+                    
+					<form method="POST">
+                        <div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-6 col-lg-4 col-lg-offset-8">
+						<button name="fileName" class="btn btn-warning btn-lg" value="<%= fileName %>">Download Image</button>
+                        </div>
+                 
+						<!--<button name="fileName" value="<%= fileName %>">Download</button>-->
+					</form>
+                    <div class="row">
+                        <br><br><br><br>
+                        
+					
+                  
+
+                            <p>Please note that by downloading you agree to not sue us please. There are no refunds for any of our photos.</p></div>
+                    </div>
+               
+				</main>
+
+				
+			</div>
+			
+		<footer>
+        
+			<div class="footer-copyright text-center py-3">
+				<p>Thank you for choosing STOCK OVERFLOW! </p>
+			</div>
+          
+		</footer>
+			
+		</body>
+	</html>
